@@ -1,11 +1,16 @@
-// dark mode toggle
+//makes the text transition when loaded
+const sr = ScrollReveal ({
+    distance: '80px',
+    duration: 2800,
+    reset: true
+})
 
-let toggle = document.querySelector("#darkModeToggle");
-toggle.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-});
+sr.reveal('.text,.social',{delay:300, origin:'bottom'})
 
 
-document.querySelector('.cancel-btn').addEventListener('click', function() {
-    document.querySelector('form').reset(); // This will clear the form
+document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevents actual form submission
+
+// Displays success message
+    alert("Form Submitted Successfully!");
 });
