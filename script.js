@@ -1,3 +1,12 @@
+// makes the menu bar clickable
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
 //makes the text transition when loaded
 const sr = ScrollReveal ({
     distance: '80px',
