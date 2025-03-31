@@ -221,7 +221,7 @@ span{
         background: white;
         color:#825830;
     }
-    .navbar a:after{
+    .navbar a::after{
         display: none;
     }
     .navbar a:active{
