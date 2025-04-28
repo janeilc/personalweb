@@ -13,7 +13,7 @@ app.post('/contact', (req, res) => {
     const { firstname, lastname, email, comments } = req.body; // access form data
     console.log('Form submission:', { firstname, lastname, email, comments });
     
-    res.send('Form submitted successfully'); 
+    res.send('Form submitted successfully'); // after form submits this message displays
 });
 
 app.listen(port, () => {
